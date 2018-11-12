@@ -1,0 +1,60 @@
+<test-data>
+
+    <code-fragment id="CheckLogPrivateFinal1">
+        <![CDATA[
+package org.jpf.aitest;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+/**
+ * @author wupf
+ *
+ */
+public class abc {
+	private      static final Logger logger1 =  LogManager.getLogger();
+	private      static          Log logger11 =  LogManager.getLogger();
+    private      static          Logger logger10 =  LogManager.getLogger();
+	private                 final Logger logger2 =  LogManager.getLogger();
+    private                          Logger logger3 =  LogManager.getLogger();
+                      static final  Logger logger4=  LogManager.getLogger();
+    public       static final  Logger logger5 = LogManager.getLogger();
+    protected static final Logger logger6 = LogManager.getLogger();
+                     static final Logger logger7 = LogManager.getLogger();
+                      static          Logger logger8 = LogManager.getLogger();
+                                         Logger logger9= LogManager.getLogger();
+     private int i=0;
+     private String ab="ab";
+}
+    ]]>
+    </code-fragment>
+    <test-code>
+        <description>CheckLogPrivateFinal 1</description>
+        <expected-problems>10</expected-problems>
+        <code-ref id="CheckLogPrivateFinal1" />
+        <expected-linenumbers>12,13,14,15,16,17,18,19,20,21</expected-linenumbers>
+    </test-code>
+
+
+    <code-fragment id="CheckLogPrivateFinal2">
+        <![CDATA[
+package org.jpf.aitest;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+/**
+ * @author wupf
+ *
+ */
+public class abc {
+	private      static final Logger logger1 =  LogManager.getLogger();
+}
+    ]]>
+    </code-fragment>
+    <test-code>
+        <description>CheckLogPrivateFinal 2</description>
+        <expected-problems>0</expected-problems>
+        <code-ref id="CheckLogPrivateFinal2" />
+    </test-code>
+</test-data>
