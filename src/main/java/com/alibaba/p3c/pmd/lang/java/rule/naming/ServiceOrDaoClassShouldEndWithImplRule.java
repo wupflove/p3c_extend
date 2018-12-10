@@ -29,9 +29,9 @@ import net.sourceforge.pmd.lang.ast.Node;
  * @date 2017/04/16
  */
 public class ServiceOrDaoClassShouldEndWithImplRule extends AbstractXpathRule {
-    private static final String XPATH = "//ClassOrInterfaceDeclaration"
+    private static final String XPATH = "//ClassOrInterfaceDeclaration\n"
         + "[ .[@Interface='false'] and .[@Abstract='false'] and ./ImplementsList/ClassOrInterfaceType[ ends-with(@Image, 'Service') or "
-        + "ends-with(@Image, 'DAO')]]"
+        + "ends-with(@Image, 'DAO')]]\n"
         + "[not(.[ ends-with(@Image, 'Impl')])]";
 
     public ServiceOrDaoClassShouldEndWithImplRule() {

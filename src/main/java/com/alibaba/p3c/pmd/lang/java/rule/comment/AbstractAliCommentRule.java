@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.alibaba.p3c.pmd.lang.java.rule;
+package com.alibaba.p3c.pmd.lang.java.rule.comment;
 
 import com.alibaba.p3c.pmd.I18nResources;
 

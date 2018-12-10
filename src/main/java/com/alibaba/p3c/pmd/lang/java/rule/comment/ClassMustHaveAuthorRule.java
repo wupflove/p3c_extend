@@ -18,7 +18,6 @@ package com.alibaba.p3c.pmd.lang.java.rule.comment;
 import java.util.regex.Pattern;
 
 import com.alibaba.p3c.pmd.I18nResources;
-import com.alibaba.p3c.pmd.lang.java.rule.AbstractAliCommentRule;
 import com.alibaba.p3c.pmd.lang.java.util.ViolationUtils;
 
 import net.sourceforge.pmd.lang.java.ast.ASTClassOrInterfaceDeclaration;

@@ -19,7 +19,6 @@ import java.util.List;
 import java.util.regex.Pattern;
 
 import com.alibaba.p3c.pmd.I18nResources;
-import com.alibaba.p3c.pmd.lang.java.rule.AbstractAliCommentRule;
 import com.alibaba.p3c.pmd.lang.java.util.ViolationUtils;
 
 import net.sourceforge.pmd.lang.ast.Node;

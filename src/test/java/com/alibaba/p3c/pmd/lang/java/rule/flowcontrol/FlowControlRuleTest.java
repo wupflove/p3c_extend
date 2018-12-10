@@ -26,6 +26,7 @@ import net.sourceforge.pmd.testframework.SimpleAggregatorTst;
  */
 public class FlowControlRuleTest extends SimpleAggregatorTst {
 
+
     private static final String RULESET = "java-ali-flowcontrol";
 
     @Override
@@ -33,6 +34,5 @@ public class FlowControlRuleTest extends SimpleAggregatorTst {
         addRule(RULESET, "SwitchStatementRule");
         addRule(RULESET, "NeedBraceRule");
         addRule(RULESET, "AvoidComplexConditionRule");
-        addRule(RULESET, "AvoidNegationOperatorRule");
     }
 }

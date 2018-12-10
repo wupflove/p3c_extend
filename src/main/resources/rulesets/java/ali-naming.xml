@@ -207,5 +207,23 @@ ServiceManager.getSession().getNewConnection().commit();
             ]]>
         </example>
     </rule>
-    
+    <rule name="DontUseSqlCmd"
+          language="java"
+          since="1.6"
+          message="java.naming.DontUseSqlCmd.violation.msg"
+          class="org.wupf.p8a.pmd.lang.java.rule.naming.DontUseSqlCmd">
+        <priority>3</priority>
+        <example>
+            <![CDATA[
+             String strSql="select ";
+             String strabc;
+            strabc	="select ";
+            strabc="update ";
+            strabc="delete ";
+            strabc="truncate ";
+            strabc="drop ";
+             strabc="alter ";
+            ]]>
+        </example>
+    </rule>    
 </ruleset>

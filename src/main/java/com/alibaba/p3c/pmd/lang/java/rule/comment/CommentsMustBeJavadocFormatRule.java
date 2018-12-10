@@ -23,7 +23,6 @@ import java.util.SortedMap;
 import java.util.TreeMap;
 
 import com.alibaba.p3c.pmd.I18nResources;
-import com.alibaba.p3c.pmd.lang.java.rule.AbstractAliCommentRule;
 import com.alibaba.p3c.pmd.lang.java.rule.util.NodeSortUtils;
 
 import net.sourceforge.pmd.lang.ast.Node;

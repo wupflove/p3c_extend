@@ -21,7 +21,6 @@ import java.util.SortedMap;
 import java.util.TreeMap;
 
 import com.alibaba.p3c.pmd.I18nResources;
-import com.alibaba.p3c.pmd.lang.java.rule.AbstractAliCommentRule;
 import com.alibaba.p3c.pmd.lang.java.rule.util.NodeSortUtils;
 
 import net.sourceforge.pmd.lang.ast.Node;
@@ -50,11 +49,9 @@ public class EnumConstantsMustHaveCommentRule extends AbstractAliCommentRule {
             if (value instanceof ASTEnumDeclaration) {
                 isPreviousEnumDecl = true;
             } else if (value instanceof ASTEnumConstant && isPreviousEnumDecl) {
-                Node enumBody = value.jjtGetParent();
-                Node enumDeclaration = enumBody.jjtGetParent();
-                addViolationWithMessage(data, enumBody,
+                addViolationWithMessage(data, value,
                     I18nResources.getMessage("java.comment.EnumConstantsMustHaveCommentRule.violation.msg",
-                        enumDeclaration.getImage()));
+                        value.getImage()));
                 isPreviousEnumDecl = false;
             } else {
                 isPreviousEnumDecl = false;
