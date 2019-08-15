@@ -1,7 +1,7 @@
 # p3c_extend
 p3c 扩展
 
-# wupf@asiainfo.com
+# 
 
 # 当前支持P3C版本1.3.4
 
