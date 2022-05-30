@@ -1,5 +1,5 @@
 /*
- * Copyright 1999-2018 asiainfo Group.
+ * Copyright 1999-2022 wupingfu
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,7 +22,7 @@ import com.alibaba.p3c.pmd.lang.java.util.ViolationUtils;
 import net.sourceforge.pmd.lang.ast.Node;
 
 /**
- * @author wupf@asiainfo.com
+ * @author 421722623@qq.com
  * @date 2018/11/13
  */
 public class CheckLogPrivateFinal extends AbstractXpathRule {
